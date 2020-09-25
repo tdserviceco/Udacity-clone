@@ -1,0 +1,25 @@
+.explore-banner {
+  margin-bottom: 2.5rem;
+  background-color: var(--black-text);
+  padding: 30vw 6vw;
+  width: 100%;
+  color: var(--white-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.explorer-banner-top > .banner-title {
+  padding-bottom: 5vw;
+  font-size: 8vw;
+  text-align: center;
+}
+
+.explorer-banner-top > .banner-text {
+  font-size: 5vw;
+  text-align: center;
+  padding-bottom: 20vw;
+}
+
+/*FORSÄTT HÄR!*/

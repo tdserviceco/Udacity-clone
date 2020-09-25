@@ -1,0 +1,38 @@
+.benefit-cards {
+  margin-top: 20vh;
+  padding: 1vh 1vw;
+}
+
+.benefit-cards-top {
+  text-align: center;
+}
+
+.benefit-cards-top .benefit-cards-title,
+.benefit-cards-top .benefit-cards-text {
+  margin-bottom: 2vh;
+}
+
+.benefit-cards-bottom {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 5vh;
+  font-size: 2vh;
+}
+
+.benefit-cards .benefit-cards-bottom .card-image {
+  width: 5.6916395222584146vh;
+  height: 5.6916395222584146vh;
+}
+
+.benefit-cards .benefit-cards-bottom .card-image,
+.benefit-cards .benefit-cards-bottom .card-title,
+.benefit-cards .benefit-cards-bottom .card-text {
+  padding-top: 2vh;
+}
+
+.benefit-cards .benefit-cards-bottom .card-text {
+  padding-bottom: 4vh;
+  margin-bottom: 4vh;
+}

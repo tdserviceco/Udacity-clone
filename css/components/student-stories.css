@@ -1,0 +1,76 @@
+.student-stories {
+  background: var(--light-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5vw 0 0;
+  padding: 1vw 1vw;
+}
+
+.student-stories-top .stories-title {
+  font-size: 9vw;
+  font-weight: 100;
+  padding: 15vw 0;
+}
+
+.student-stories-middle .features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.student-stories-middle .features>* {
+  padding: 5vw 0;
+  text-align: center;
+  font-weight: 100;
+}
+
+.student-stories-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30vw;
+  padding: 0 1vw;
+}
+
+.student-stories-bottom .story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10vw;
+  position: relative;
+  margin-bottom: 30vw;
+}
+
+.student-stories-bottom .story-image {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: -35px;
+}
+
+.student-stories-bottom .story-title {
+  padding: 8vw 0;
+  font-weight: 100;
+}
+
+.student-stories-bottom .story-text {
+  padding-bottom: 5vw;
+}
+
+.company-info .company-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+}
+
+.company-info .company-text span {
+  font-size: 6vw;
+  font-weight: 100;
+}

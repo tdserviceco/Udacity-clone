@@ -1,0 +1,124 @@
+.hero-sponsors {
+  display: none;
+}
+
+.main-hero-content {
+  max-height: 50%;
+  height: 100%;
+  background: url("../../img/HomepageBanner_tablet.jpg") no-repeat;
+  background-size: cover;
+  background-position: bottom right -78vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 21vw;
+  color: var(--white-text);
+}
+
+.main-hero-content .hero-title,
+.main-hero-content .hero-text,
+.main-hero-content .hero-link {
+  font-weight: 500;
+  text-align: center;
+}
+
+.main-hero-content .hero-title {
+  margin-bottom: 2rem;
+  font-size: 6.2vw;
+  line-height: 1;
+}
+
+.main-hero-content .hero-text {
+  text-align: center;
+  font-size: 4vw;
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 320px) {
+  .main-hero-content {
+    background-position: bottom right -56vw;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .btn {
+    font-size: 2vh;
+  }
+  .main-hero-content {
+    background-position: bottom right -58vw;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .main-hero-content {
+    background-position: bottom right -42vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+
+  .main-hero-content {
+    margin-top: 10.5vh;
+    max-width: 100%;
+    background-size: cover;
+    background-position: right;
+    align-items: flex-start;
+  }
+
+  .main-hero-content .hero-title, .main-hero-content .hero-text, .main-hero-content .hero-link {
+    text-align: left;
+  }  
+
+  .main-hero-content .hero-title {
+    font-size: 3.2vh;
+  }
+
+  .main-hero-content .hero-text {
+    font-size: 2.2vw;
+  }
+  
+  .main-hero-content .hero-link .btn {
+    font-size: 1.5vh;
+    padding: 0.9rem 3rem;
+  }
+
+  .hero-sponsors {
+    display: block;
+    margin-top: 4vh;
+  }
+
+  .hero-sponsors .hero-sponsor-text {
+    font-size: 3vw;
+  }
+
+  .hero-sponsors-icons .hero-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+
+  }
+}
+
+@media screen and (min-width: 992px) {
+  
+  .main-hero {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+
+  .main-hero-content .hero-title {
+    font-size: 2.4vh;
+  }
+
+  .main-hero-content .hero-text {
+    font-size: 1.5vh;
+  }
+
+  .main-hero-content .hero-sponsor-text {
+    font-size: 1.5vh;
+  }
+}

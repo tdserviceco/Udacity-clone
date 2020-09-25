@@ -1,0 +1,29 @@
+.footer-marker {
+  margin-bottom: 3vw;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: var(--white-bg);
+  margin: 0 auto;
+  width: 85vw;
+  max-width: 100%;
+}
+
+.footer-marker .footer-links {
+  box-shadow: var(--footer-shadow);
+}
+
+.feature-desktop{
+  display: none;
+}
+
+.footer-link.link-has-child {
+  display: none;
+}
+.open+.footer-link.link-has-child {
+  display: block;
+}
