@@ -48,9 +48,9 @@
 
 .student-stories-bottom .story-image {
   position: absolute;
-  width: 64px;
-  height: 64px;
-  top: -35px;
+  width: 25vw;
+  height: 25vw;
+  top: -13vw
 }
 
 .student-stories-bottom .story-title {
@@ -73,4 +73,25 @@
 .company-info .company-text span {
   font-size: 6vw;
   font-weight: 100;
+}
+
+@media only screen and (min-width: 768px) {
+  .student-stories-middle .features>* {
+    padding: 1vw 1vw;
+  }
+  .student-stories-middle .features img {
+    height: 10vw;
+  }
+  .student-stories-middle {
+    display: flex;
+  }
+  .student-stories-middle .features {
+    font-size: 2.5vw;
+  }
+  .student-stories-bottom .story-title {
+    font-size: 5vw;
+  }
+  .student-stories-bottom .story-text {
+    font-size: 4vw;
+  }
 }

@@ -17,13 +17,31 @@
   box-shadow: var(--footer-shadow);
 }
 
-.feature-desktop{
+.feature-desktop {
   display: none;
+}
+
+.feature-mobile {
+  display: flex;
 }
 
 .footer-link.link-has-child {
   display: none;
 }
+
 .open+.footer-link.link-has-child {
-  display: block;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-link.link-has-child .item {
+  margin: 2vw 4vw 2vw;
+}
+.footer-link.link-has-child .item a {
+  font-family: var(--default-font);
+  font-size: 4.25vw;
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--black-text);
+ 
 }

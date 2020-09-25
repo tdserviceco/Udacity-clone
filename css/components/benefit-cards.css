@@ -33,6 +33,12 @@
 }
 
 .benefit-cards .benefit-cards-bottom .card-text {
-  padding-bottom: 4vh;
-  margin-bottom: 4vh;
+  padding-bottom: 8vw;
+  margin-bottom: 6vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .benefit-cards {
+    margin-top: 0;
+  }
 }

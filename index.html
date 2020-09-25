@@ -11,46 +11,72 @@
 <body>
   <header>
     <div class="header-main">
-      <div class="menu">
+      <div class="menu mobile desktop">
         <input type="checkbox" id="button-trigger">
         <div class="menu-wrapper">
-          <label id="menu-bars" for="button-trigger"></label>
+          <label id="menu-bars" for="button-trigger" onclick="openNav()"></label>
         </div>
-        <nav class="main-navigation" role="navigation">
-          <a href="/">
-            <svg height="30" viewBox="0 0 180 30" width="180">
-              <g fill="none" fill-rule="evenodd">
-                <path
-                  d="M57.6 17.239187c0 2.546698-2.085517 4.407747-4.965517 4.407747-2.88 0-4.965517-1.86105-4.965517-4.407747V7.835994H45.68276v9.501143c0 3.330298 2.88 6.170846 6.951723 6.170846 4.071724 0 6.951724-2.938498 6.951724-6.170846V7.835994H57.6v9.403193zm16.286897-9.403193h-5.36276v15.67199h5.36276c4.468965 0 7.547586-3.03645 7.547586-7.835996 0-4.701596-3.07862-7.835994-7.547586-7.835994zm-.19862 13.71299h-3.177932V9.794994h3.17793c3.376553 0 5.76 2.252847 5.76 5.876994 0 3.917998-2.482757 5.779046-5.76 5.876996zm43.49793.29385c-3.575172 0-5.95862-2.644648-5.95862-6.170846 0-3.526197 2.482758-6.072895 5.95862-6.072895 2.78069 0 4.468966 1.5672 4.468966 1.5672l.794483-1.3713s-1.787587-1.86105-5.46207-1.86105c-4.766896 0-7.746206 3.526198-7.746206 7.738045 0 4.309797 3.07862 7.933945 7.944827 7.933945 3.773793 0 5.66069-2.5467 5.66069-2.5467l-1.092414-1.175398c-.09931-.09795-1.588965 1.959-4.568276 1.959zm14.896553-14.00684h1.986206v15.67199h-1.986207zm10.924137 1.959h4.965517v13.71299h1.986207V9.794994h4.96552v-1.959H143.0069m30.587583 0l-4.766896 7.150344-4.866207-7.150347h-2.085518l5.95862 8.717546v6.954445h1.986208v-6.954444l5.85931-8.71754m-81.434482 0l-6.157242 15.67199h1.986207l1.688276-4.5057 6.45517-1.3713 2.18483 5.876998h1.986203l-6.05793-15.67199h-2.085518zm-1.886897 9.305242l2.97931-7.248294h.099315L97.92 16.063788l-5.56138 1.07745z"
-                  fill="#2E3D49"></path>
-                <path
-                  d="M29 .5l1 .5v13c0 5.551887-2.8897 8.695692-5.995216 10.099885L24.0094 24.1l-7.620963 4.388562c-.05877.03456-.11776.068527-.176957.101902l-.08642.049764.001806-.00254C14.48289 29.545895 12.684682 30 11 30 6 30 0 26 0 18V6l2 1v11c0 8 6 10 9 10 1.858706 0 4.86901-.76773 6.89043-3.254517C14.181726 23.872636 10 20.678703 10 14V2.2L2 7 0 6l10-6 1 .5 1 .5v13c0 6.939958 4.515283 8.612086 7.017542 8.933368C19.625786 21.62159 20 19.997902 20 18V5l2 1v12c0 1.852645-.321777 3.49077-.878395 4.91438C23.648223 22.549217 28 20.813144 28 14V2.25L22 6l-2-1 8-5 1 .5z"
-                  fill="#02B3E4"></path>
-              </g>
-            </svg>
-          </a>
-          <ul class="navigation">
-            <li class="navigation-items">
-              <a href="#" class="item">
-                Om oss
-              </a>
-            </li>
-            <li class="navigation-items">
-              <a href="#" class="item">
-                Meny
-              </a>
-            </li>
-            <li class="navigation-items">
-              <a href="#" class="item">
-                Kontakta oss
-              </a>
-            </li>
-            <li class="navigation-items">
-              <a href="#" class="item">
-                Sponsorer
-              </a>
-            </li>
-          </ul>
+        <nav class="main-navigation" id="main-navigation" role="navigation">
+          <div class="nav-top">
+            <a href="#">
+              <svg height="30" viewBox="0 0 180 30" width="180">
+                <g fill="none" fill-rule="evenodd">
+                  <path
+                    d="M57.6 17.239187c0 2.546698-2.085517 4.407747-4.965517 4.407747-2.88 0-4.965517-1.86105-4.965517-4.407747V7.835994H45.68276v9.501143c0 3.330298 2.88 6.170846 6.951723 6.170846 4.071724 0 6.951724-2.938498 6.951724-6.170846V7.835994H57.6v9.403193zm16.286897-9.403193h-5.36276v15.67199h5.36276c4.468965 0 7.547586-3.03645 7.547586-7.835996 0-4.701596-3.07862-7.835994-7.547586-7.835994zm-.19862 13.71299h-3.177932V9.794994h3.17793c3.376553 0 5.76 2.252847 5.76 5.876994 0 3.917998-2.482757 5.779046-5.76 5.876996zm43.49793.29385c-3.575172 0-5.95862-2.644648-5.95862-6.170846 0-3.526197 2.482758-6.072895 5.95862-6.072895 2.78069 0 4.468966 1.5672 4.468966 1.5672l.794483-1.3713s-1.787587-1.86105-5.46207-1.86105c-4.766896 0-7.746206 3.526198-7.746206 7.738045 0 4.309797 3.07862 7.933945 7.944827 7.933945 3.773793 0 5.66069-2.5467 5.66069-2.5467l-1.092414-1.175398c-.09931-.09795-1.588965 1.959-4.568276 1.959zm14.896553-14.00684h1.986206v15.67199h-1.986207zm10.924137 1.959h4.965517v13.71299h1.986207V9.794994h4.96552v-1.959H143.0069m30.587583 0l-4.766896 7.150344-4.866207-7.150347h-2.085518l5.95862 8.717546v6.954445h1.986208v-6.954444l5.85931-8.71754m-81.434482 0l-6.157242 15.67199h1.986207l1.688276-4.5057 6.45517-1.3713 2.18483 5.876998h1.986203l-6.05793-15.67199h-2.085518zm-1.886897 9.305242l2.97931-7.248294h.099315L97.92 16.063788l-5.56138 1.07745z"
+                    fill="#2E3D49"></path>
+                  <path
+                    d="M29 .5l1 .5v13c0 5.551887-2.8897 8.695692-5.995216 10.099885L24.0094 24.1l-7.620963 4.388562c-.05877.03456-.11776.068527-.176957.101902l-.08642.049764.001806-.00254C14.48289 29.545895 12.684682 30 11 30 6 30 0 26 0 18V6l2 1v11c0 8 6 10 9 10 1.858706 0 4.86901-.76773 6.89043-3.254517C14.181726 23.872636 10 20.678703 10 14V2.2L2 7 0 6l10-6 1 .5 1 .5v13c0 6.939958 4.515283 8.612086 7.017542 8.933368C19.625786 21.62159 20 19.997902 20 18V5l2 1v12c0 1.852645-.321777 3.49077-.878395 4.91438C23.648223 22.549217 28 20.813144 28 14V2.25L22 6l-2-1 8-5 1 .5z"
+                    fill="#02B3E4"></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="nav-bottom">
+            <ul class="navigation">
+              <li class="navigation-items">
+                <a href="#" class="item">
+                  <span>Programs</span>
+                  <svg height="32" style="fill:#ffffff" viewBox="0 0 32 32" width="32"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22 15.89c0 .319-.146.632-.414.82l-10.175 7.13a.868.868 0 0 1-.499.16c-.503 0-.912-.438-.912-.98V8.98c0-.186.049-.367.141-.524.27-.457.834-.593 1.26-.304l10.174 6.91c.11.075.205.174.276.292.1.165.149.35.149.533v.002z"
+                      fill-rule="evenodd"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="navigation-items">
+                <a href="#" class="item">
+                  <span>Careers</span>
+                  <svg height="32" style="fill:#ffffff" viewBox="0 0 32 32" width="32"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22 15.89c0 .319-.146.632-.414.82l-10.175 7.13a.868.868 0 0 1-.499.16c-.503 0-.912-.438-.912-.98V8.98c0-.186.049-.367.141-.524.27-.457.834-.593 1.26-.304l10.174 6.91c.11.075.205.174.276.292.1.165.149.35.149.533v.002z"
+                      fill-rule="evenodd"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="navigation-items">
+                <a href="#" class="item"><span>For Enterprise</span>
+                  <svg height="32" style="fill:#ffffff" viewBox="0 0 32 32" width="32"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22 15.89c0 .319-.146.632-.414.82l-10.175 7.13a.868.868 0 0 1-.499.16c-.503 0-.912-.438-.912-.98V8.98c0-.186.049-.367.141-.524.27-.457.834-.593 1.26-.304l10.174 6.91c.11.075.205.174.276.292.1.165.149.35.149.533v.002z"
+                      fill-rule="evenodd"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="navigation-items">
+                <a href="#" class="item sign-in">
+                  Sign in
+                </a>
+              </li>
+              <li class="navigation-items">
+                <a href="#" class="item get-started">
+                  Get started
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
       <div class="logotype-block">
@@ -1862,13 +1888,115 @@
         <div class="footer-marker-top">
           <div class="footer-links">
             <div class="footer-link">
-              <button onclick="openThis(this)" type="button" class="footer-btn">Featured button</button>
+              <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Featured button</button>
               <dl class="footer-link link-has-child">
                 <dt class="feature-desktop">Featured</dt>
-                <dd><a href="#">1</a></dd>
-                <dd><a href="#">2</a></dd>
-                <dd><a href="#">3</a></dd>
-                <dd><a href="#">4</a></dd>
+                <dd class="item"><a href="#">Developer for Microsoft Azure</a></dd>
+                <dd class="item"><a href="#">RPA Developer with UiPath</a></dd>
+                <dd class="item"><a href="#">Agile Software Development</a></dd>
+                <dd class="item"><a href="#">Science for Business Leaders</a></dd>
+                <dd class="item"><a href="#">DevOps Engineer for Microsoft Azure</a></dd>
+                <dd class="item"><a href="#">Introduction to Cybersecurity</a></dd>
+                <dd class="item"><a href="#">Intermediate JavaScript</a></dd>
+                <dd class="item"><a href="#">Monetization Strategy</a></dd>
+                <dd class="item"><a href="#">Growth Product Manager</a></dd>
+                <dd class="item"><a href="#">Java Web Developer</a></dd>
+                <dd class="item"><a href="#">Data Product Manager</a></dd>
+                <dd class="item"><a href="#">SQL</a></dd>
+                <dd class="item"><a href="#">AI for Healthcare</a></dd>
+                <dd class="item"><a href="#">AWS Cloud Architect</a></dd>
+                <dd class="item"><a href="#">Intel® Edge AI for IoT Developers</a></dd>
+                <dd class="item"><a href="#">Product Manager</a></dd>
+                <dd class="item"><a href="#">AI for Business Leaders</a></dd>
+                <dd class="item"><a href="#">Data Intro to Machine Learning with TensorFlow</a></dd>
+                <dd class="item"><a href="#">Data Streaming</a></dd>
+                <dd class="item"><a href="#">UX Designer</a></dd>
+                <dd class="item"><a href="#">AI Product Manager</a></dd>
+                <dd class="item"><a href="#">Sensor Fusion Engineer</a></dd>
+                <dd class="item"><a href="#">Data Visualization</a></dd>
+                <dd class="item"><a href="#">Cloud Developer</a></dd>
+                <dd class="item"><a href="#">Cloud Dev Ops Engineer</a></dd>
+                <dd class="item"><a href="#">C++</a></dd>
+                <dd class="item"><a href="#">Data Structures and Algorithms</a></dd>
+                <dd class="item"><a href="#">Marketing Analytics</a></dd>
+                <dd class="item"><a href="#">Data Engineer</a></dd>
+                <dd class="item"><a href="#">Android Basics</a></dd>
+                <dd class="item"><a href="#">Android Developer</a></dd>
+                <dd class="item"><a href="#">iOS Developer</a></dd>
+                <dd class="item"><a href="#">Business Analytics</a></dd>
+                <dd class="item"><a href="#">Data Analyst</a></dd>
+                <dd class="item"><a href="#">Front End Web Developer</a></dd>
+                <dd class="item"><a href="#">Full Stack Web Developer</a></dd>
+                <dd class="item"><a href="#">Intro to Programming</a></dd>
+                <dd class="item"><a href="#">Intro to Machine Learning</a></dd>
+                <dd class="item"><a href="#">Machine Learning Engineer</a></dd>
+                <dd class="item"><a href="#">Predictive Analytics for Business</a></dd>
+                <dd class="item"><a href="#">Programming for Data Science with Python</a></dd>
+                <dd class="item"><a href="#">Programming for Data Science with R</a></dd>
+                <dd class="item"><a href="#">React</a></dd>
+              </dl>
+              <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Only at udacity</button>
+              <dl class="footer-link link-has-child grid-block block-1">
+                <dt class="feature-desktop">Only at udacity</dt>
+                <dd class="item"><a href="#">Artificial Intelligence</a></dd>
+                <dd class="item"><a href="#">Deep Learning</a></dd>
+                <dd class="item"><a href="#">Digital Marketing</a></dd>
+                <dd class="item"><a href="#">Flying Car and Autonomous Flight Engineer</a></dd>
+                <dd class="item"><a href="#">Intro to Self-Driving Cars</a></dd>
+                <dd class="item"><a href="#">Machine Learning Engineer</a></dd>
+                <dd class="item"><a href="#">Robotics Software Engineer</a></dd>
+              </dl>
+              <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Udacity School</button>
+              <dl class="footer-link link-has-child grid-block block-2">
+                <dt class="feature-desktop">Udacity School</dt>
+                <dd class="item"><a href="#">Self-Driving Car Engineer</a></dd>
+                <dd class="item"><a href="#">School of Artificial Intelligence</a></dd>
+                <dd class="item"><a href="#">School of Autonomous Systems</a></dd>
+                <dd class="item"><a href="#">School of Business</a></dd>
+                <dd class="item"><a href="#">School of Data Science</a></dd>
+                <dd class="item"><a href="#">School of Programming</a></dd>
+                <dd class="item"><a href="#">School of Cloud Computing</a></dd>
+              </dl>
+              <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Resources</button>
+              <dl class="footer-link link-has-child grid-block block-3">
+                <dt class="feature-desktop">Resources</dt>
+                <dd class="item"><a href="#">Catalog</a></dd>
+                <dd class="item"><a href="#">Career Resource Center</a></dd>
+                <dd class="item"><a href="#">Career Services</a></dd>
+                <dd class="item"><a href="#">Student Success</a></dd>
+                <dd class="item"><a href="#">Udacity Talks</a></dd>
+                <dd class="item"><a href="#">Scholarships</a></dd>
+                <dd class="item"><a href="#">What is AI?</a></dd>
+              </dl>
+              <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Programs</button>
+              <dl class="footer-link link-has-child grid-block block-4">
+                <dt class="feature-desktop">Programs</dt>
+                <dd class="item"><a href="#">Veterans</a></dd>
+                <dd class="item"><a href="#">Georgia Tech</a></dd>
+              </dl>
+              <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Company</button>
+              <dl class="footer-link link-has-child grid-block block-5">
+                <dt class="feature-desktop">Company</dt>
+                <dd class="item"><a href="#">About</a></dd>
+                <dd class="item"><a href="#">Blog</a></dd>
+                <dd class="item"><a href="#">In the News</a></dd>
+                <dd class="item"><a href="#">Jobs</a></dd>
+                <dd class="item"><a href="#">Udacity Intersect</a></dd>
+                <dd class="item"><a href="#">Become an Instructor</a></dd>
+              </dl>
+              <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Enterprise</button>
+              <dl class="footer-link link-has-child grid-block block-6">
+                <dt class="feature-desktop">Enterprise</dt>
+                <dd class="item"><a href="#">Udacity for Enterprise</a></dd>
+                <dd class="item"><a href="#">Enterprise Resource Center</a></dd>
+              </dl>
+              <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Support</button>
+              <dl class="footer-link link-has-child grid-block block-5">
+                <dt class="feature-desktop">Support</dt>
+                <dd class="item"><a href="#">Contact Us</a></dd>
+                <dd class="item"><a href="#">Help and FAQ</a></dd>
+                <dd class="item"><a href="#">Service Status</a></dd>
+                <dd class="item"><a href="#">Tech Requirements</a></dd>
               </dl>
             </div>
           </div>

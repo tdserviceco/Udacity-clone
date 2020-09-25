@@ -22,4 +22,16 @@
   padding-bottom: 20vw;
 }
 
-/*FORSÄTT HÄR!*/
+@media only screen and (min-width: 768px) {
+  .explore-banner {
+    padding: 10vw 3vw;
+  }
+  .explorer-banner-top > .banner-title {
+    font-size: 5vw;
+  }
+
+  .explorer-banner-top > .banner-text {
+    font-size: 4vw;
+    padding-bottom: 10vw;
+  }
+}

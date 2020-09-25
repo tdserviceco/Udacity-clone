@@ -1,6 +1,59 @@
-.main-navigation {
+.menu.mobile .main-navigation {
   display: none;
+  position: fixed;
+  left: -100vw;
   opacity: 0;
+}
+
+.menu.mobile .main-navigation.active {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  background: var(--black-text);
+  animation-name: NavMove;
+  animation-duration: var(--animation-speed);
+  left: 0;
+  top: 0;
+  opacity: 1;
+  z-index: 100;
+  height: 100%;
+}
+
+.menu.mobile .nav-top {
+  height: calc(var(--height) - 1.75rem);
+  background: var(--mobile-menu-bg);
+}
+
+.menu.mobile .nav-top>a {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.menu.mobile .nav-bottom>.navigation {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu.mobile .nav-bottom>.navigation .navigation-items {
+  height: calc(var(--height) - 1.75rem);
+  width: 80vw;
+}
+
+.menu.mobile .nav-bottom>.navigation .navigation-items .item, .menu.mobile .nav-bottom>.navigation .navigation-items .item:visited {
+  color: var(--white-bg);
+  text-decoration: none;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  ;
+  padding: 2vw 4vw;
 }
 
 #button-trigger:checked, #button-trigger:not(:checked) {
@@ -44,12 +97,17 @@
   bottom: -0.625rem;
 }
 
-@media screen and (min-width: 760px) {
-  .header-main, .menu-wrapper
-  {
+@media only screen and (min-width: 760px) {
+  .header-main, .menu-wrapper {
     height: calc(var(--height) - 0.25rem);
   }
   .menu-wrapper #menu-bars:before {
     top: 2.375rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .menu.mobile .nav-top {
+    height: calc(var(--height) - 0.1rem);
   }
 }

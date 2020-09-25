@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@keyframes NavMove {
+  from {left:-100vw}
+  to {left: 0;}
+}
+
+@keyframes RestMove {
+  0% {left: -100vw}
+  50% {left: 0vw;}
+  100% {left: 80vw}
+}
 * {
   padding: 0;
   margin: 0;
@@ -25,11 +35,28 @@
   --purple: #a951ed;
   --light-grey: rgba(29, 124, 248, .05);
   --footer-shadow: 12px 16px 20px 0 rgba(46,61,73,.2);
+  --mobile-menu-bg: #1c262f;
+  --get-started: #02ccba;
 }
 
 body {
   font-family: var(--default-font);
   color: var(--black-text);
+  position: relative;  
+}
+
+body.active {
+  overflow: hidden;
+}
+header.active,
+header.active + main {
+  overflow: scroll;
+}
+
+body.active {
+  left: 80vw;
+  animation-name: NavMove;
+  animation-duration: var(--animation-speed);
 }
 
 header {
@@ -40,6 +67,12 @@ header {
   background: var(--white-bg);
   box-shadow: var(--box-shadow);
   z-index: 9;
+}
+
+header.active {
+  left: 80vw;
+  animation-name: NavMove;
+  animation-duration: var(--animation-speed);
 }
 
 footer {
@@ -61,7 +94,7 @@ footer {
 }
 
 .container {
-  max-width: 73.75rem;
+  max-width: 100vw;
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -78,7 +111,7 @@ ul, li {
 }
 
 .btn {
-  max-width: 13.75rem;
+  max-width: 100vw;
   width: 10vw;
   padding: 6vw;
   background: var(--button-bg);
@@ -86,7 +119,7 @@ ul, li {
   color: var(--white-text);
   font-family: var(--default-font);
   border-radius: 0.1875rem;
-  font-size: 1.5vh;
+  font-size: 3.5vw;
   text-transform: uppercase;
 }
 
@@ -95,37 +128,34 @@ ul, li {
   letter-spacing: 0.10rem;
 }
 
-.program-btn {
-  width: 100%;
+.program-btn,
+.footer-btn {
   display: flex;
+  background: transparent;
+  border: none;
   border-bottom: .0625rem solid var(--border-color);
-  background: none;
-  padding: 4vw;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  position: relative;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
   color: var(--black-text);
-  font-size: 5vw;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
 }
 
+.program-btn {
+  width: 100%;
+  padding: 4vw;
+  font-size: 5vw;
+
+}
+
 .footer-btn {
   width: 85vw;
-  border: none;
-  background: transparent;
-  padding: 4vw;
-  font-family: 'Open Sans', sans-serif;
-  justify-content: flex-start;
-  align-items: center;
-  display: flex;
+  padding: 4vw 4vw 6vw;
   max-width: 100%;
-  border-bottom: .0625rem solid var(--border-color);
-  position: relative;
+
 }
+
 
 .program-btn:after,
 .footer-btn:after {
@@ -149,6 +179,10 @@ ul, li {
   content: '-';
 }
 
+.footer-btn:after {
+  color: var(--grey-bg);
+  text-transform: lowercase;
+}
 .footer-btn.open:after {
   content: 'x';
 }
@@ -323,8 +357,61 @@ ul, li {
   border-top: 0.3257328990228013vh solid var(--purple);
 }
 
-@media screen and (min-width: 768px) {
+.sign-in {
+  color: var(--button-bg) !important;
+  font-weight: 100;
+}
+
+.get-started {
+  color: var(--get-started) !important;
+  font-weight: 100;
+}
+
+@media only screen and (min-width: 320px) {
+
+  .btn {
+    font-size: 3.5vw;
+    padding: 4vw;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  .btn {
+    font-size: 4vw;
+    padding: 3vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .main-container {
     margin-top: 0;
   }
+  .program-btn {
+    font-size: 3vw;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 48%;
+    margin: 1vw;
+  }
+  .card:nth-child(odd){
+    margin-left: 0;
+  }
+  .card:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .footer-btn {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .container {
+    max-width: 80vw;
+  } 
 }
