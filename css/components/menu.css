@@ -44,6 +44,11 @@
   width: 80vw;
 }
 
+
+.menu.mobile .nav-bottom>.navigation .navigation-items .item svg {
+  fill: #fff;
+}
+
 .menu.mobile .nav-bottom>.navigation .navigation-items .item, .menu.mobile .nav-bottom>.navigation .navigation-items .item:visited {
   color: var(--white-bg);
   text-decoration: none;
