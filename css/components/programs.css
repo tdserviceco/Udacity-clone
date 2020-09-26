@@ -103,3 +103,48 @@
     font-size: 5vw
   }
 }
+
+@media only screen and (min-width: 1920px) {
+  .main-programs .programs-title {
+    font-size: 2vw;
+    padding: 0;
+  }
+
+  .programs {
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .program-list {
+    width: 14vw;
+  }
+
+  .main-programs .card .card-image {
+    height: 10vw;
+  }
+
+
+  .main-programs .card-bottom .difficulty-text,
+  .main-programs .card-bottom .result,
+  .main-programs .card-footer-bottom .footer-est-time {
+    font-size: 0.5vw;
+  }
+  .main-programs .cards .card {
+    padding:  0 1vw 0 0;
+  }
+
+  .main-programs .card-bottom, .main-programs .card-middle, .main-programs .card-footer {
+    padding: 0;
+  }
+
+  .footer-title {
+    font-size: 0.7vw;
+  }
+  .program-list .open > span {
+    border-radius: 0.1vw;
+    border-bottom: 0.2vw solid var(--nav-bars);
+  }
+
+}

@@ -1,0 +1,222 @@
+    <section class="benefit-cards">
+        <div class="benefit-cards-top">
+          <h2 class="benefit-cards-title">
+            Don't waste your valuable time or money
+          </h2>
+          <p class="benefit-cards-text">
+            Only Udacity has all the critical factors to deliver real results
+          </p>
+        </div>
+        <div class="benefit-cards-bottom">
+          <div class="cards">
+            <div class="card blue">
+              <img src="./img/EmployeableSkills__1_.svg" class="card-image" alt="briefcase">
+              <h3 class="card-title">Get real employable skills</h3>
+              <p class="card-text">
+                Our quality curriculum is designed with top-tier industry partners, not academics, so you learn the
+                high-impact skills that top companies want.
+              </p>
+            </div>
+            <div class="card yellow">
+              <img src="./img/ActiveLearning__1_.svg" class="card-image" alt="active learning">
+              <h3 class="card-title">Project-based, active learning</h3>
+              <p class="card-text">
+                Learn by doing with real-world projects and other hands-on exercises that lead to real skills mastery.
+              </p>
+            </div>
+            <div class="card green">
+              <img src="./img/Schedule__1_.svg" class="card-image" alt="schedule">
+              <h3 class="card-title">Learn on your schedule</h3>
+              <p class="card-text">
+                Self-paced learning - whenever and wherever you want. Graduate while learning part-time for 10 hrs/week.
+              </p>
+            </div>
+            <div class="card purple">
+              <img src="./img/HelpYouNeed__1_.svg" class="card-image" alt="schedule">
+              <h3 class="card-title">The help you need, when you need it</h3>
+              <p class="card-text">
+                Reach out to our mentors 24/7 and have your coding questions answered quickly so you can keep learning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="explore-banner">
+        <div class="explorer-banner-top">
+          <h2 class="banner-title">
+            Make the most of your online learning experience
+          </h2>
+          <p class="banner-text">
+            Our Online Learning Resource Center has tips, tricks and inspiring stories to help you learn while staying
+            home.
+          </p>
+        </div>
+        <div class="explorer-banner-bottom">
+          <a href="#" class="btn btn-banner">explore resources</a>
+        </div>
+      </section>
+      <section class="student-stories">
+        <div class="student-stories-top">
+          <h2 class="stories-title">
+            Strenght in numbers
+          </h2>
+        </div>
+        <div class="student-stories-middle">
+          <div class="features">
+            <img src="img/degree-hat.svg">
+            <h2 class="features-number">
+              100,000+
+            </h2>
+            <p class="features-text">
+              Udacity graduations and counting
+            </p>
+          </div>
+          <div class="features">
+            <img src="img/star_copy.svg">
+            <h2 class="features-number">
+              200+
+            </h2>
+            <p class="features-text">
+              Industry experts partnering to build our content
+            </p>
+          </div>
+          <div class="features">
+            <img src="img/star_copy_2.svg">
+            <h2 class="features-number">
+              100+
+            </h2>
+            <p class="features-text">
+              Enterprise customers world-wide
+            </p>
+          </div>
+        </div>
+        <div class="student-stories-bottom">
+          <div class="story green">
+            <img class="story-image" src="./img/Jesse.jpg" alt="Jesse">
+            <h3 class="story-title">
+              Jesse
+            </h3>
+            <i class="story-text">
+              "The curriculum was directly targeted toward applied techniques with high profile projects – real datasets
+              with industry partners. It helped me achieve my career transition goal."
+            </i>
+            <div class="company-info">
+              <p class="company-text">Now at
+                <span>Raytheon | Data science</span>
+              </p>
+            </div>
+          </div>
+          <div class="story purple">
+            <img class="story-image" src="./img/Sundar.jpg" alt="Sundar">
+            <h3 class="story-title">
+              Sundar
+            </h3>
+            <i class="story-text">
+              "The curriculum was aligned with what I wanted to study. The assignments are specific to the industry I’m
+              in. I was able to develop new language translation tools for my company."
+            </i>
+            <div class="company-info">
+              <p class="company-text">Now at
+                <span>Comcast | Lead Data Scientist</span>
+              </p>
+            </div>
+          </div>
+          <div class="story blue">
+            <img class="story-image" src="./img/David.jpg" alt="David">
+            <h3 class="story-title">
+              David
+            </h3>
+            <i class="story-text">
+              "One of the things that attracted me to Udacity was a curriculum developed by people that worked for some
+              of the biggest and most successful tech companies.”
+            </i>
+            <div class="company-info">
+              <p class="company-text">Now at
+                <span>Panera Bread | Data Administrator</span>
+              </p>
+            </div>
+          </div>
+          <div class="more-stories">
+            <a href="#" class="btn btn-hero">More success stories</a>
+          </div>
+        </div>
+      </section>
+
+      
+            <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Only at udacity</button>
+            <div class="link-has-child">
+              <dl class="footer-link link-has-child grid-block block-1">
+                <dt class="feature-desktop">Only at udacity</dt>
+                <dd class="item"><a href="#">Artificial Intelligence</a></dd>
+                <dd class="item"><a href="#">Deep Learning</a></dd>
+                <dd class="item"><a href="#">Digital Marketing</a></dd>
+                <dd class="item"><a href="#">Flying Car and Autonomous Flight Engineer</a></dd>
+                <dd class="item"><a href="#">Intro to Self-Driving Cars</a></dd>
+                <dd class="item"><a href="#">Machine Learning Engineer</a></dd>
+                <dd class="item"><a href="#">Robotics Software Engineer</a></dd>
+              </dl>
+            </div>
+            <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Udacity School</button>
+            <div class="link-has-child">
+              <dl class="footer-link link-has-child grid-block block-2">
+                <dt class="feature-desktop">Udacity School</dt>
+                <dd class="item"><a href="#">Self-Driving Car Engineer</a></dd>
+                <dd class="item"><a href="#">School of Artificial Intelligence</a></dd>
+                <dd class="item"><a href="#">School of Autonomous Systems</a></dd>
+                <dd class="item"><a href="#">School of Business</a></dd>
+                <dd class="item"><a href="#">School of Data Science</a></dd>
+                <dd class="item"><a href="#">School of Programming</a></dd>
+                <dd class="item"><a href="#">School of Cloud Computing</a></dd>
+              </dl>
+            </div>
+            <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Resources</button>
+            <div class="link-has-child">
+              <dl class="footer-link link-has-child grid-block block-3">
+                <dt class="feature-desktop">Resources</dt>
+                <dd class="item"><a href="#">Catalog</a></dd>
+                <dd class="item"><a href="#">Career Resource Center</a></dd>
+                <dd class="item"><a href="#">Career Services</a></dd>
+                <dd class="item"><a href="#">Student Success</a></dd>
+                <dd class="item"><a href="#">Udacity Talks</a></dd>
+                <dd class="item"><a href="#">Scholarships</a></dd>
+                <dd class="item"><a href="#">What is AI?</a></dd>
+              </dl>
+            </div>
+            <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Programs</button>
+            <div class="link-has-child">
+              <dl class="footer-link link-has-child grid-block block-4">
+                <dt class="feature-desktop">Programs</dt>
+                <dd class="item"><a href="#">Veterans</a></dd>
+                <dd class="item"><a href="#">Georgia Tech</a></dd>
+              </dl>
+            </div>
+            <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Company</button>
+            <div class="link-has-child">
+              <dl class="footer-link link-has-child grid-block block-5">
+                <dt class="feature-desktop">Company</dt>
+                <dd class="item"><a href="#">About</a></dd>
+                <dd class="item"><a href="#">Blog</a></dd>
+                <dd class="item"><a href="#">In the News</a></dd>
+                <dd class="item"><a href="#">Jobs</a></dd>
+                <dd class="item"><a href="#">Udacity Intersect</a></dd>
+                <dd class="item"><a href="#">Become an Instructor</a></dd>
+              </dl>
+            </div>
+            <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Enterprise</button>
+            <div class="link-has-child">
+              <dl class="footer-link link-has-child grid-block block-6">
+                <dt class="feature-desktop">Enterprise</dt>
+                <dd class="item"><a href="#">Udacity for Enterprise</a></dd>
+                <dd class="item"><a href="#">Enterprise Resource Center</a></dd>
+              </dl>
+            </div>
+            <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Support</button>
+            <div class="link-has-child">
+              <dl class="footer-link link-has-child grid-block block-5">
+                <dt class="feature-desktop">Support</dt>
+                <dd class="item"><a href="#">Contact Us</a></dd>
+                <dd class="item"><a href="#">Help and FAQ</a></dd>
+                <dd class="item"><a href="#">Service Status</a></dd>
+                <dd class="item"><a href="#">Tech Requirements</a></dd>
+              </dl>
+            </div>

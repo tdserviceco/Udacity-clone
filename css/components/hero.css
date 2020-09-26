@@ -117,6 +117,28 @@
 }
 
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1920px) {
+  .main-hero {
+    margin-top: 4.9vw;
+  }
+  .hero-container {
+    padding: 4vw;
+  }
 
+  .main-hero-content {
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+
+  .main-hero-content .hero-title {
+    margin-top: 2vw;
+    margin-bottom: 0;
+    font-size: 2.3vw;
+  }
+  .main-hero-content .hero-text {
+    font-size: 1vw;
+    margin-bottom: 2vw;
+  }
 }

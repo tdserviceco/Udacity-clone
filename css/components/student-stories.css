@@ -95,3 +95,52 @@
     font-size: 4vw;
   }
 }
+
+@media only screen and (min-width:1920px) {
+  .student-stories-top .stories-title {
+    font-size: 3vw;
+    padding: 0 0;
+  }
+  .student-stories-middle .features {
+    font-size: 1.5vw;
+  }
+  .student-stories-middle .features img {
+    height: 4vw;
+  }
+
+  .student-stories-bottom {
+    flex-direction: row;
+    margin-top: 6vw;
+    margin-bottom: 3vw;
+  }
+  
+  .student-stories-bottom .story {
+    width: 30%;
+    margin: 0 auto;
+    padding: 4vw;
+  }
+
+  .student-stories-bottom .story-image {
+    width: 5vw;
+    height: 5vw;
+    top: -2.5vw;
+  }
+
+  .student-stories-bottom .story-title {
+    font-size: 3vw;
+    padding: 1vw 0;
+  }
+
+  .student-stories-bottom .story-text {
+    font-size: 1vw;
+    padding-bottom: 3vw 
+  }
+
+  .company-info .company-text {
+    font-size: 1vw;
+  }
+  .company-info .company-text span {
+    font-size: 0.9vw;
+  }
+
+}

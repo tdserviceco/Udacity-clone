@@ -42,3 +42,17 @@
     margin-top: 0;
   }
 }
+
+@media only screen and (min-width: 1920px) {
+  .benefit-cards-bottom .card {
+    width: 24%;
+    margin: 0.5vw auto;
+  }
+
+  .benefit-cards .benefit-cards-bottom .card-text {
+    padding-bottom: 0;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-bottom: 1vw;
+  } 
+}
