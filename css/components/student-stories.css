@@ -1,0 +1,145 @@
+.student-stories {
+  background: var(--student-color);
+  margin-top: 5vw;
+}
+
+.student-stories-top {
+  text-align: center;
+  padding-top: 10vw;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vw;
+}
+
+.features-number {
+  font-weight: 300;
+}
+
+.student-stories-bottom {
+  margin-top: 20vw;
+}
+
+.story {
+  position: relative;
+  background-color: #fff;
+  border-radius: 3vw;
+  box-shadow: 0 0 4px 0 rgba(17, 22, 26, .16), 0 2px 4px 0 rgba(17, 22, 26, .08), 0 4px 8px 0 rgba(17, 22, 26, .08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20vw 0 0;
+  margin-bottom: 20vw;
+}
+
+.story-image {
+  position: absolute;
+  width: 25vw;
+  height: 25vw;
+  top: -13vw
+}
+
+.story-text {
+  font-size: 4.5vw;
+  padding-bottom: 5vw;
+}
+
+.more-stories {
+  display: flex;
+  justify-content: center;
+}
+
+.more-stories > .btn {
+  max-width: 100vw;
+  padding: 2vw 15vw;
+  margin: 0 auto;
+}
+
+.company-info {
+  width: 100%;
+  background: var(--student-color);
+  padding: 10vw;
+  font-size: 4.5vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .student-stories-top {
+    font-size: 4vw;
+  }
+
+  .student-stories-middle {
+    font-size: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .features img {
+    height: 5vw;
+    width: 100%;
+    margin-bottom: 5vw;
+  }
+
+  .student-stories-bottom.container {
+    max-width: 99vw;
+  }
+  .student-stories-bottom {
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+  
+  }
+
+  .story-title {
+    font-size: 4vw;
+  }
+
+  .story-text {
+    font-size: 2.5vw;
+    padding-top: 2.5vw;
+  }
+
+
+  .story {
+    width: 30%;
+    padding: 10vw 0 0;
+    margin: 0 auto 10vw auto;
+    max-height: 50vh;
+    height: 100%;
+  }
+
+  .story-image {
+    width: 20vw;
+    height: 20vw;
+    top: -11vw;
+  }
+
+  
+  .company-info {
+    font-size: 2.0vw;
+    padding: 5vw 0;
+  }
+
+  .company-text {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+  }
+
+  .company-text > span {
+    font-weight: 300;
+  }
+
+  .more-stories > .btn {
+    width: 44%;
+    padding: 2vw 8vw;
+  }
+ 
+}

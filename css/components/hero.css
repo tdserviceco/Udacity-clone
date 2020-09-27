@@ -72,8 +72,9 @@
 }
 
 .hero-list-item {
-  font-size: 3.1vw;
+  font-size: 3.5vw;
   padding: 5vw 1vw;
+  height: 16vw;
 }
 
 .hero-skills-middle .container {
@@ -115,15 +116,18 @@
   .hero-sponsors-icons {
     margin-top: 2vw;
   }
+
+  
   /* "SKILL LIST " */
   .hero-skills-top {
-    
     font-size: 2.5vw;
   }
   .hero-list-item {
     font-size: 2.1vw;
     padding: 2vw 1vw;
+    height: 7vw;
   }
+
   .hero-skills-middle .container {
     max-width: 80vw;
   }
