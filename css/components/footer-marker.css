@@ -120,8 +120,8 @@
 
 @media only screen and (min-width: 1920px) {
   .footer-container {
-    width: 100%;
-    margin: 0;
+    width: 80vw;
+    margin: 0 auto;
     background: transparent;
   }
   .feature-desktop {

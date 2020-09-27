@@ -21,6 +21,8 @@
 .image {
   z-index: 3;
   position: relative;
+  width: 100vw;
+  height: 50vw;
 }
 
 .card-bottom {
@@ -59,5 +61,48 @@
 
   .footer-title {
     font-size: 2vw;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .main-programs-top {
+    font-size: 1vw;
+    margin: 2vw 0 1vw
+  }
+
+  .schools {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .image {
+    height: 10vw;
+    width: 25vw;
+  }
+
+  .card-middle {
+    font-size: 1.2vw;
+  }
+
+  .card .container {
+    padding: 1vw;
+  }
+  .card-bottom {
+    padding: 1vw 0px;
+    font-size: 1vw;
+    align-items: unset;
+  }
+
+  .card-footer-top {
+    font-size: 1.5vw;
+  } 
+
+  .footer-title {
+    font-size: 1vw;
+  }
+
+  .child-item .card {
+    margin: 1vw;
   }
 }

@@ -132,3 +132,55 @@
     max-width: 80vw;
   }
 }
+
+@media only screen and (min-width: 1920px) {
+  .showcase-hero {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 50%;
+  }
+  .hero-content {
+    padding: 1vw;
+    background-position: bottom right -7vw;
+    background-size: 126%;
+  }
+
+  .hero-title {
+    font-size: 1.5vw
+  }
+
+  .hero-text, .hero-sponsor-text {
+    font-size: 1vw
+  }
+
+  .hero-content-top, .hero-content-middle {
+    padding-bottom: 1vw;
+  }
+
+  /* "SKILL LIST" */
+  .hero-skills-top {
+    font-size: 1.5vw;
+  }
+  .hero-skill-list-left .hero-skill-list-title, .hero-skill-list-middle .hero-skill-list-title, .hero-skill-list-right .hero-skill-list-title {
+    padding: 1vw;
+  }
+
+  .hero-skills-top {
+    margin: 0 0 3vw;
+    font-size: 1vw;
+  }
+
+  .hero-list-item {
+    font-size: 0.8vw;
+    height: 2.29vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1vw;
+  }
+
+  .hero-skill-list-left .hero-list-item {
+    display: flex;
+    justify-content: flex-start;
+  }
+}

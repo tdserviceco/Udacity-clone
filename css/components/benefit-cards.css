@@ -43,6 +43,7 @@
 @media only screen and (min-width: 768px) {
   .benefit-cards {
     margin-top: 10vw;
+    margin-bottom: 5vw;
   }
   
   .benefit-cards .blue img,
@@ -60,7 +61,50 @@
     font-size: 2.5vw;
   }
 
+  .benefit-cards-bottom .cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2vw;
+  }
   .benefit-cards-bottom .card {
     padding: 5vw 0 10vw;
+  }
+
+  @media only screen and (min-width: 1920px) {
+  .benefit-cards  {
+    margin-top: 2vw;
+  }
+
+  .benefit-cards-top {
+    margin-bottom: 3vw;
+  }
+
+  .benefit-cards-title {
+    margin-bottom: 2vw;
+  }
+  
+  .benefit-cards-bottom .cards {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .benefit-cards-bottom .card {
+    width: 23%;
+    margin: 0 auto;
+    border-radius: 1vw;
+    border-top-width: 0.3vw;
+  }
+
+  .benefit-cards-bottom .card-title {
+    font-size: 1vw;
+  }
+
+  .benefit-cards-bottom .card-text {
+    font-size: 0.9vw;
+    padding-top: 1vw;
+  }
+
+  .benefit-cards .blue img, .benefit-cards .purple img, .benefit-cards .yellow img, .benefit-cards .green img {
+    width: 2vw;
   }
 }

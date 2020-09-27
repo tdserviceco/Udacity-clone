@@ -56,7 +56,7 @@
 }
 
 .more-stories > .btn {
-  max-width: 100vw;
+  max-width: 89vw;
   padding: 2vw 15vw;
   margin: 0 auto;
 }
@@ -66,6 +66,9 @@
   background: var(--student-color);
   padding: 10vw;
   font-size: 4.5vw;
+  border-bottom-left-radius: 3vw;
+  border-bottom-right-radius: 3vw;
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -138,8 +141,57 @@
   }
 
   .more-stories > .btn {
-    width: 44%;
+    width: 40%;
     padding: 2vw 8vw;
   }
  
+}
+
+@media only screen and (min-width: 1920px) {
+  .student-stories-top {
+    font-size: 1vw;
+    padding-top: 2vw;
+  }
+
+  .student-stories-bottom {
+    margin-top: 5vw;
+  }
+
+  .story {
+    max-height: 100%;
+    border-top-width: 0.3vw;
+    padding: 4vw 0 0;
+  }
+  .features {
+    padding: 1vw;
+    font-size: 1vw;
+  }
+
+  .features img {
+    height: 3vw;
+  }
+
+  .story-title {
+    font-size: 2vw;
+  }
+
+  .story-image {
+    height: 7vw;
+    width: 7vw;
+    top: -4vw;
+  }
+
+  .story-text,
+  .company-info {
+    font-size: 1vw;
+  }
+
+  .student-stories-bottom.container {
+    max-width: 80vw;
+  }
+
+  .more-stories > .btn {
+    width: 35%;
+    padding: 1vw 8vw;
+  }
 }
