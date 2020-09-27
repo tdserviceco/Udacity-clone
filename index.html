@@ -10,8 +10,8 @@
 
 <body>
   <header>
-    <div class="header-main">
-      <div class="menu mobile desktop">
+    <div class="header-main container">
+      <div class="menu">
         <input type="checkbox" id="button-trigger">
         <div class="menu-wrapper">
           <label id="menu-bars" for="button-trigger" onclick="openNav()"></label>
@@ -34,21 +34,19 @@
           <div class="nav-bottom">
             <ul class="navigation">
               <li class="navigation-items">
-                <a href="#" class="item">
+                <a href="#" class="nav-item">
                   <span>Programs</span>
-                  <svg height="32" viewBox="0 0 32 32" width="32"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M22 15.89c0 .319-.146.632-.414.82l-10.175 7.13a.868.868 0 0 1-.499.16c-.503 0-.912-.438-.912-.98V8.98c0-.186.049-.367.141-.524.27-.457.834-.593 1.26-.304l10.174 6.91c.11.075.205.174.276.292.1.165.149.35.149.533v.002z"
-                    fill-rule="evenodd"></path>
-                </svg>
+                  <svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22 15.89c0 .319-.146.632-.414.82l-10.175 7.13a.868.868 0 0 1-.499.16c-.503 0-.912-.438-.912-.98V8.98c0-.186.049-.367.141-.524.27-.457.834-.593 1.26-.304l10.174 6.91c.11.075.205.174.276.292.1.165.149.35.149.533v.002z"
+                      fill-rule="evenodd"></path>
+                  </svg>
                 </a>
               </li>
               <li class="navigation-items">
-                <a href="#" class="item">
+                <a href="#" class="nav-item item">
                   <span>Careers</span>
-                  <svg height="32" viewBox="0 0 32 32" width="32"
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M22 15.89c0 .319-.146.632-.414.82l-10.175 7.13a.868.868 0 0 1-.499.16c-.503 0-.912-.438-.912-.98V8.98c0-.186.049-.367.141-.524.27-.457.834-.593 1.26-.304l10.174 6.91c.11.075.205.174.276.292.1.165.149.35.149.533v.002z"
                       fill-rule="evenodd"></path>
@@ -56,9 +54,8 @@
                 </a>
               </li>
               <li class="navigation-items">
-                <a href="#" class="item"><span>For Enterprise</span>
-                  <svg height="32" viewBox="0 0 32 32" width="32"
-                    xmlns="http://www.w3.org/2000/svg">
+                <a href="#" class="nav-item item"><span>For Enterprise</span>
+                  <svg height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M22 15.89c0 .319-.146.632-.414.82l-10.175 7.13a.868.868 0 0 1-.499.16c-.503 0-.912-.438-.912-.98V8.98c0-.186.049-.367.141-.524.27-.457.834-.593 1.26-.304l10.174 6.91c.11.075.205.174.276.292.1.165.149.35.149.533v.002z"
                       fill-rule="evenodd"></path>
@@ -66,12 +63,12 @@
                 </a>
               </li>
               <li class="navigation-items">
-                <a href="#" class="item sign-in">
+                <a href="#" class="nav-item sign-in">
                   Sign in
                 </a>
               </li>
               <li class="navigation-items">
-                <a href="#" class="item get-started">
+                <a href="#" class="nav-item get-started">
                   Get started
                 </a>
               </li>
@@ -91,85 +88,88 @@
   </header>
   <main>
     <div class="main-container">
-      <section class="main-hero container">
-        <div class="main-hero-content">
-          <div class="hero-content-top">
-            <h1 class="hero-title">
-              Bootcamp Quality at 1/10 of the Cost
-            </h1>
-          </div>
-          <div class="hero-content-middle">
-            <p class="hero-text">
-              Udacity is the world’s fastest, most efficient way to master the skills tech companies want. 100% online,
-              part-time & self-paced.
-            </p>
-          </div>
-          <div class="hero-content-bottom">
-            <div class="hero-link">
-              <a href="#" class="btn btn-hero">Learn more</a>
+      <section class="showcase-hero">
+        <div class="hero-top">
+          <div class="hero-content">
+            <div class="hero-content-top">
+              <h1 class="hero-title">
+                Bootcamp Quality at 1/10 of the Cost
+              </h1>
             </div>
-          </div>
-          <div class="hero-sponsors">
-            <div class="hero-sponsor">
-              <p class="hero-sponsor-text">
-                Industry leading programs built and recognized by top companies worldwide
+            <div class="hero-content-middle">
+              <p class="hero-text">
+                Udacity is the world’s fastest, most efficient way to master the skills tech companies want. 100%
+                online,
+                part-time & self-paced.
               </p>
             </div>
-            <div class="hero-sponsors-icons">
-              <ul class="hero-icons">
-                <li class="icon-item">
-                  <img src="./img/logo-white-google.svg" alt="Google">
-                </li>
-                <li class="icon-item">
-                  <img src="./img/logo-white-aws.svg" alt="Aws">
-                </li>
-                <li class="icon-item">
-                  <img src="./img/logo-white-att.svg" alt="AT&T">
-                </li>
-                <li class="icon-item">
-                  <img src="./img/logo-white-ibm.svg" alt="IBM">
-                </li>
-                <li class="icon-item">
-                  <img src="./img/logo-white-lyft.svg" alt="Lyft">
-                </li>
-              </ul>
+            <div class="hero-content-bottom">
+              <div class="hero-link">
+                <a href="#" class="btn btn-hero">Learn more</a>
+              </div>
+            </div>
+            <div class="hero-sponsors">
+              <div class="hero-sponsor">
+                <p class="hero-sponsor-text">
+                  Industry leading programs built and recognized by top companies worldwide
+                </p>
+              </div>
+              <div class="hero-sponsors-icons">
+                <ul class="hero-icons">
+                  <li class="icon-item">
+                    <img src="./img/logo-white-google.svg" alt="Google">
+                  </li>
+                  <li class="icon-item">
+                    <img src="./img/logo-white-aws.svg" alt="Aws">
+                  </li>
+                  <li class="icon-item">
+                    <img src="./img/logo-white-att.svg" alt="AT&T">
+                  </li>
+                  <li class="icon-item">
+                    <img src="./img/logo-white-ibm.svg" alt="IBM">
+                  </li>
+                  <li class="icon-item">
+                    <img src="./img/logo-white-lyft.svg" alt="Lyft">
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="main-skills">
-          <div class="main-skills-container">
-            <div class="main-skills-top">
-              <h2 class="main-skills-title">Only at Udacity: <b>Job-Ready Skills</b></h2>
+        <div class="hero-bottom">
+          <div class="hero-skills-container">
+            <div class="hero-skills-top">
+              <h2 class="hero-skills-title">Only at Udacity: <b>Job-Ready Skills</b></h2>
             </div>
-            <div class="main-skills-middle">
-              <dl class="main-skill-list-left white">
-                <dt class="main-skill-list-title">
+            <div class="hero-skills-middle container">
+              <dl class="hero-skill-list-left white-list">
+                <dt class="hero-skill-list-title">
                   empty
                 </dt>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   Learn by doing
                 </dd>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   Practitioner-level skills
                 </dd>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   Job-focused content
                 </dd>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   Real human help
                 </dd>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   Personalized code reviews
                 </dd>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   Real-life projects
                 </dd>
               </dl>
-              <dl class="main-skill-list-middle blue-list">
-                <dt class="main-skill-list-title">
+              <dl class="hero-skill-list-middle blue-list">
+                <dt class="hero-skill-list-title">
                   udacity
                 </dt>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   <svg height="13" version="1.1" viewBox="0 0 20 20" width="10px" xmlns="http://www.w3.org/2000/svg">
                     <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
                       <g fill="#FFF" fill-rule="nonzero" transform="translate(-849.000000, -3677.000000)">
@@ -182,7 +182,7 @@
                     </g>
                   </svg>
                 </dd>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   <svg height="13" version="1.1" viewBox="0 0 20 20" width="10px" xmlns="http://www.w3.org/2000/svg">
                     <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
                       <g fill="#FFF" fill-rule="nonzero" transform="translate(-849.000000, -3677.000000)">
@@ -195,7 +195,7 @@
                     </g>
                   </svg>
                 </dd>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   <svg height="13" version="1.1" viewBox="0 0 20 20" width="10px" xmlns="http://www.w3.org/2000/svg">
                     <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
                       <g fill="#FFF" fill-rule="nonzero" transform="translate(-849.000000, -3677.000000)">
@@ -208,7 +208,7 @@
                     </g>
                   </svg>
                 </dd>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   <svg height="13" version="1.1" viewBox="0 0 20 20" width="10px" xmlns="http://www.w3.org/2000/svg">
                     <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
                       <g fill="#FFF" fill-rule="nonzero" transform="translate(-849.000000, -3677.000000)">
@@ -221,7 +221,7 @@
                     </g>
                   </svg>
                 </dd>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   <svg height="13" version="1.1" viewBox="0 0 20 20" width="10px" xmlns="http://www.w3.org/2000/svg">
                     <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
                       <g fill="#FFF" fill-rule="nonzero" transform="translate(-849.000000, -3677.000000)">
@@ -234,7 +234,7 @@
                     </g>
                   </svg>
                 </dd>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   <svg height="13" version="1.1" viewBox="0 0 20 20" width="10px" xmlns="http://www.w3.org/2000/svg">
                     <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
                       <g fill="#FFF" fill-rule="nonzero" transform="translate(-849.000000, -3677.000000)">
@@ -248,11 +248,11 @@
                   </svg>
                 </dd>
               </dl>
-              <dl class="main-skill-list-right grey-list">
-                <dt class="main-skill-list-title">
+              <dl class="hero-skill-list-right grey-list">
+                <dt class="hero-skill-list-title">
                   others
                 </dt>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   <svg height="13" viewBox="0 0 12 13" width="12" xmlns="http://www.w3.org/2000/svg">
                     <g fill="#ffffff" fill-rule="evenodd">
                       <path d="m10.596.49 1.414 1.414-10.606 10.606-1.414-1.414z" />
@@ -260,7 +260,7 @@
                     </g>
                   </svg>
                 </dd>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   <svg height="13" viewBox="0 0 12 13" width="12" xmlns="http://www.w3.org/2000/svg">
                     <g fill="#ffffff" fill-rule="evenodd">
                       <path d="m10.596.49 1.414 1.414-10.606 10.606-1.414-1.414z" />
@@ -268,7 +268,7 @@
                     </g>
                   </svg>
                 </dd>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   <svg height="13" viewBox="0 0 12 13" width="12" xmlns="http://www.w3.org/2000/svg">
                     <g fill="#ffffff" fill-rule="evenodd">
                       <path d="m10.596.49 1.414 1.414-10.606 10.606-1.414-1.414z" />
@@ -276,7 +276,7 @@
                     </g>
                   </svg>
                 </dd>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   <svg height="13" viewBox="0 0 12 13" width="12" xmlns="http://www.w3.org/2000/svg">
                     <g fill="#ffffff" fill-rule="evenodd">
                       <path d="m10.596.49 1.414 1.414-10.606 10.606-1.414-1.414z" />
@@ -284,7 +284,7 @@
                     </g>
                   </svg>
                 </dd>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   <svg height="13" viewBox="0 0 12 13" width="12" xmlns="http://www.w3.org/2000/svg">
                     <g fill="#ffffff" fill-rule="evenodd">
                       <path d="m10.596.49 1.414 1.414-10.606 10.606-1.414-1.414z" />
@@ -292,7 +292,7 @@
                     </g>
                   </svg>
                 </dd>
-                <dd class="skill-list-item">
+                <dd class="hero-list-item">
                   <svg height="13" viewBox="0 0 12 13" width="12" xmlns="http://www.w3.org/2000/svg">
                     <g fill="#ffffff" fill-rule="evenodd">
                       <path d="m10.596.49 1.414 1.414-10.606 10.606-1.414-1.414z" />
@@ -305,497 +305,29 @@
           </div>
         </div>
       </section>
-      <section class="main-programs container">
+      <section class="main-programs">
         <div class="main-programs-container">
-          <div class="main-programs-top">
+          <div class="main-programs-top container">
             <h2 class="programs-title">
               Explore our schools to find your perfect program
             </h2>
           </div>
-          <ul class="programs">
-            <li class="program-list">
-              <button type="button" class="program-btn" onclick="openThis(this)"><span>Programming</span></button>
-              <ul class="program-list-has-child cards">
+          <ul class="schools">
+            <li class="schools-list">
+              <button type="button" class="btn schools-btn" onclick="openThis(this)"><span>Programming</span></button>
+              <ul class="schools-list-has-child cards">
                 <li class="child-item">
                   <article class="card">
                     <a href="#">
                       <div class="card-top">
-                        <div class="card-image data-engineer">
-                          <div class="course flag new">
-                            <h5>New</h5>
+                        <div class="card-image">
+                          <div class="image">
+                            <img src="./img/data_engineer_catalog_image.jpg" alt="Catalog of data engineer program">
+                            <div class="flag new">
+                              <h5>New</h5>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Data Engineer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.6 (727)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            5 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image intro-programming">
-                          <div class="course flag popular">
-                            <h5>Popular</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Data Engineer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.7 (2879)</span>
-                        <div class="difficulty-bars easy">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Beginner</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image full-stack-web">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Full Stack Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.6 (452)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image c-plus-plus">
-                          <div class="course flag popular">
-                            <h5>popular</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          C++
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.5 (582)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image front-end-dev">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Front End Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.7 (716)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image java-dev">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Java Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.1 (95)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                </li>
-              </ul>
-            </li>
-            <li class="program-list">
-              <button type="button" class="program-btn" onclick="openThis(this)"><span>Data Science</span></button>
-              <ul class="program-list-has-child cards">
-                <li class="child-item">
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image data-engineer">
-                          <div class="course flag new">
-                            <h5>New</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Data Engineer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.6 (727)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            5 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image intro-programming">
-                          <div class="course flag popular">
-                            <h5>Popular</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Data Engineer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.7 (2879)</span>
-                        <div class="difficulty-bars easy">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Beginner</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image full-stack-web">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Full Stack Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.6 (452)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image c-plus-plus">
-                          <div class="course flag popular">
-                            <h5>popular</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          C++
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.5 (582)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image front-end-dev">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Front End Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.7 (716)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image java-dev">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Java Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.1 (95)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
 
-                </li>
-              </ul>
-            </li>
-            <li class="program-list">
-              <button type="button" class="program-btn" onclick="openThis(this)"><span>Artificial
-                  Intelligence</span></button>
-              <ul class="program-list-has-child cards">
-                <li class="child-item">
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image data-engineer">
-                          <div class="course flag new">
-                            <h5>New</h5>
-                          </div>
                         </div>
                       </div>
                       <div class="card-middle">
@@ -827,1249 +359,14 @@
                       </div>
                     </a>
                   </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image intro-programming">
-                          <div class="course flag popular">
-                            <h5>Popular</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Data Engineer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.7 (2879)</span>
-                        <div class="difficulty-bars easy">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Beginner</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image full-stack-web">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Full Stack Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.6 (452)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image c-plus-plus">
-                          <div class="course flag popular">
-                            <h5>popular</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          C++
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.5 (582)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image front-end-dev">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Front End Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.7 (716)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image java-dev">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Java Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.1 (95)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-
-                </li>
-              </ul>
-            </li>
-            <li class="program-list">
-              <button type="button" class="program-btn" onclick="openThis(this)"><span>Business</span></button>
-              <ul class="program-list-has-child cards">
-                <li class="child-item">
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image data-engineer">
-                          <div class="course flag new">
-                            <h5>New</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Data Engineer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.6 (727)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            5 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image intro-programming">
-                          <div class="course flag popular">
-                            <h5>Popular</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Data Engineer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.7 (2879)</span>
-                        <div class="difficulty-bars easy">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Beginner</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image full-stack-web">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Full Stack Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.6 (452)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image c-plus-plus">
-                          <div class="course flag popular">
-                            <h5>popular</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          C++
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.5 (582)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image front-end-dev">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Front End Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.7 (716)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image java-dev">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Java Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.1 (95)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-
-                </li>
-              </ul>
-            </li>
-            <li class="program-list">
-              <button type="button" class="program-btn" onclick="openThis(this)"><span>Autonomous
-                  Vehicles</span></button>
-              <ul class="program-list-has-child cards">
-                <li class="child-item">
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image data-engineer">
-                          <div class="course flag new">
-                            <h5>New</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Data Engineer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.6 (727)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            5 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image intro-programming">
-                          <div class="course flag popular">
-                            <h5>Popular</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Data Engineer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.7 (2879)</span>
-                        <div class="difficulty-bars easy">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Beginner</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image full-stack-web">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Full Stack Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.6 (452)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image c-plus-plus">
-                          <div class="course flag popular">
-                            <h5>popular</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          C++
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.5 (582)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image front-end-dev">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Front End Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.7 (716)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image java-dev">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Java Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.1 (95)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-
-                </li>
-              </ul>
-            </li>
-            <li class="program-list">
-              <button type="button" class="program-btn" onclick="openThis(this)"><span>Cloud Computing</span></button>
-              <ul class="program-list-has-child cards">
-                <li class="child-item">
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image data-engineer">
-                          <div class="course flag new">
-                            <h5>New</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Data Engineer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.6 (727)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            5 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image intro-programming">
-                          <div class="course flag popular">
-                            <h5>Popular</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Data Engineer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.7 (2879)</span>
-                        <div class="difficulty-bars easy">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Beginner</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image full-stack-web">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Full Stack Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.6 (452)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image c-plus-plus">
-                          <div class="course flag popular">
-                            <h5>popular</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          C++
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.5 (582)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image front-end-dev">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Front End Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.7 (716)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="card">
-                    <a href="#">
-                      <div class="card-top">
-                        <div class="card-image java-dev">
-                          <div class="course flag new">
-                            <h5>new</h5>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-middle">
-                        <h4 class="information-title">
-                          Java Web Developer
-                        </h4>
-                      </div>
-                      <div class="card-bottom">
-                        <div class="active-stars four-half-stars"></div>
-                        <span class="result">4.1 (95)</span>
-                        <div class="difficulty-bars medium">
-                          <span class="bar bar-1"></span>
-                          <span class="bar bar-2"></span>
-                          <span class="bar bar-3"></span>
-                        </div>
-                        <span class="difficulty-text">Intermediate</span>
-                      </div>
-                      <div class="card-footer">
-                        <div class="card-footer-top">
-                          <h3 class="footer-title">
-                            ESTIMATED TIME
-                          </h3>
-                        </div>
-                        <div class="card-footer-bottom">
-                          <h5 class="footer-est-time">
-                            4 months at 5-10 hrs/week
-                          </h5>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-
                 </li>
               </ul>
             </li>
           </ul>
         </div>
       </section>
-      <section class="benefit-cards">
-        <div class="benefit-cards-top">
-          <h2 class="benefit-cards-title">
-            Don't waste your valuable time or money
-          </h2>
-          <p class="benefit-cards-text">
-            Only Udacity has all the critical factors to deliver real results
-          </p>
-        </div>
-        <div class="benefit-cards-bottom">
-          <div class="cards">
-            <div class="card blue">
-              <img src="./img/EmployeableSkills__1_.svg" class="card-image" alt="briefcase">
-              <h3 class="card-title">Get real employable skills</h3>
-              <p class="card-text">
-                Our quality curriculum is designed with top-tier industry partners, not academics, so you learn the
-                high-impact skills that top companies want.
-              </p>
-            </div>
-            <div class="card yellow">
-              <img src="./img/ActiveLearning__1_.svg" class="card-image" alt="active learning">
-              <h3 class="card-title">Project-based, active learning</h3>
-              <p class="card-text">
-                Learn by doing with real-world projects and other hands-on exercises that lead to real skills mastery.
-              </p>
-            </div>
-            <div class="card green">
-              <img src="./img/Schedule__1_.svg" class="card-image" alt="schedule">
-              <h3 class="card-title">Learn on your schedule</h3>
-              <p class="card-text">
-                Self-paced learning - whenever and wherever you want. Graduate while learning part-time for 10 hrs/week.
-              </p>
-            </div>
-            <div class="card purple">
-              <img src="./img/HelpYouNeed__1_.svg" class="card-image" alt="schedule">
-              <h3 class="card-title">The help you need, when you need it</h3>
-              <p class="card-text">
-                Reach out to our mentors 24/7 and have your coding questions answered quickly so you can keep learning.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="explore-banner">
-        <div class="explorer-banner-top">
-          <h2 class="banner-title">
-            Make the most of your online learning experience
-          </h2>
-          <p class="banner-text">
-            Our Online Learning Resource Center has tips, tricks and inspiring stories to help you learn while staying
-            home.
-          </p>
-        </div>
-        <div class="explorer-banner-bottom">
-          <a href="#" class="btn btn-banner">explore resources</a>
-        </div>
-      </section>
-      <section class="student-stories">
-        <div class="student-stories-top">
-          <h2 class="stories-title">
-            Strenght in numbers
-          </h2>
-        </div>
-        <div class="student-stories-middle">
-          <div class="features">
-            <img src="img/degree-hat.svg">
-            <h2 class="features-number">
-              100,000+
-            </h2>
-            <p class="features-text">
-              Udacity graduations and counting
-            </p>
-          </div>
-          <div class="features">
-            <img src="img/star_copy.svg">
-            <h2 class="features-number">
-              200+
-            </h2>
-            <p class="features-text">
-              Industry experts partnering to build our content
-            </p>
-          </div>
-          <div class="features">
-            <img src="img/star_copy_2.svg">
-            <h2 class="features-number">
-              100+
-            </h2>
-            <p class="features-text">
-              Enterprise customers world-wide
-            </p>
-          </div>
-        </div>
-        <div class="student-stories-bottom">
-          <div class="story green">
-            <img class="story-image" src="./img/Jesse.jpg" alt="Jesse">
-            <h3 class="story-title">
-              Jesse
-            </h3>
-            <i class="story-text">
-              "The curriculum was directly targeted toward applied techniques with high profile projects – real datasets
-              with industry partners. It helped me achieve my career transition goal."
-            </i>
-            <div class="company-info">
-              <p class="company-text">Now at
-                <span>Raytheon | Data science</span>
-              </p>
-            </div>
-          </div>
-          <div class="story purple">
-            <img class="story-image" src="./img/Sundar.jpg" alt="Sundar">
-            <h3 class="story-title">
-              Sundar
-            </h3>
-            <i class="story-text">
-              "The curriculum was aligned with what I wanted to study. The assignments are specific to the industry I’m
-              in. I was able to develop new language translation tools for my company."
-            </i>
-            <div class="company-info">
-              <p class="company-text">Now at
-                <span>Comcast | Lead Data Scientist</span>
-              </p>
-            </div>
-          </div>
-          <div class="story blue">
-            <img class="story-image" src="./img/David.jpg" alt="David">
-            <h3 class="story-title">
-              David
-            </h3>
-            <i class="story-text">
-              "One of the things that attracted me to Udacity was a curriculum developed by people that worked for some
-              of the biggest and most successful tech companies.”
-            </i>
-            <div class="company-info">
-              <p class="company-text">Now at
-                <span>Panera Bread | Data Administrator</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="more-stories">
-          <a href="#" class="btn btn-hero">More success stories</a>
-        </div>
-      </section>
-    </div>
   </main>
-
   <footer>
-
-    <div class="footer-marker">
-      <svg height="30" viewBox="0 0 30 30" width="30">
-        <path
-          d="M29 .5l1 .5v13c0 5.551887-2.8897 8.695692-5.995216 10.099885L24.0094 24.1l-7.620963 4.388562c-.05877.03456-.11776.068527-.176957.101902l-.08642.049764.001806-.00254C14.48289 29.545895 12.684682 30 11 30 6 30 0 26 0 18V6l2 1v11c0 8 6 10 9 10 1.858706 0 4.86901-.76773 6.89043-3.254517C14.181726 23.872636 10 20.678703 10 14V2.2L2 7 0 6l10-6 1 .5 1 .5v13c0 6.939958 4.515283 8.612086 7.017542 8.933368C19.625786 21.62159 20 19.997902 20 18V5l2 1v12c0 1.852645-.321777 3.49077-.878395 4.91438C23.648223 22.549217 28 20.813144 28 14V2.25L22 6l-2-1 8-5 1 .5z"
-          fill="#02B3E4" fill-rule="evenodd"></path>
-      </svg>
-    </div>
-    <div class="footer-container">
-      <div class="footer-marker-top">
-        <div class="footer-links">
-          <div class="footer-link">
-            <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Featured button</button>
-            <div class="link-has-child">
-              <dl class="footer-link">
-                <dt class="feature-desktop grid-block block-0">Featured</dt>
-                <dd class="item"><a href="#">Developer for Microsoft Azure</a></dd>
-                <dd class="item"><a href="#">RPA Developer with UiPath</a></dd>
-                <dd class="item"><a href="#">Agile Software Development</a></dd>
-                <dd class="item"><a href="#">Science for Business Leaders</a></dd>
-                <dd class="item"><a href="#">DevOps Engineer for Microsoft Azure</a></dd>
-                <dd class="item"><a href="#">Introduction to Cybersecurity</a></dd>
-                <dd class="item"><a href="#">Intermediate JavaScript</a></dd>
-                <dd class="item"><a href="#">Monetization Strategy</a></dd>
-                <dd class="item"><a href="#">Growth Product Manager</a></dd>
-                <dd class="item"><a href="#">Java Web Developer</a></dd>
-                <dd class="item"><a href="#">Data Product Manager</a></dd>
-                <dd class="item"><a href="#">SQL</a></dd>
-                <dd class="item"><a href="#">AI for Healthcare</a></dd>
-                <dd class="item"><a href="#">AWS Cloud Architect</a></dd>
-                <dd class="item"><a href="#">Intel® Edge AI for IoT Developers</a></dd>
-                <dd class="item"><a href="#">Product Manager</a></dd>
-                <dd class="item"><a href="#">AI for Business Leaders</a></dd>
-                <dd class="item"><a href="#">Data Intro to Machine Learning with TensorFlow</a></dd>
-                <dd class="item"><a href="#">Data Streaming</a></dd>
-                <dd class="item"><a href="#">UX Designer</a></dd>
-                <dd class="item"><a href="#">AI Product Manager</a></dd>
-                <dd class="item"><a href="#">Sensor Fusion Engineer</a></dd>
-                <dd class="item"><a href="#">Data Visualization</a></dd>
-                <dd class="item"><a href="#">Cloud Developer</a></dd>
-                <dd class="item"><a href="#">Cloud Dev Ops Engineer</a></dd>
-                <dd class="item"><a href="#">C++</a></dd>
-                <dd class="item"><a href="#">Data Structures and Algorithms</a></dd>
-                <dd class="item"><a href="#">Marketing Analytics</a></dd>
-                <dd class="item"><a href="#">Data Engineer</a></dd>
-                <dd class="item"><a href="#">Android Basics</a></dd>
-                <dd class="item"><a href="#">Android Developer</a></dd>
-                <dd class="item"><a href="#">iOS Developer</a></dd>
-                <dd class="item"><a href="#">Business Analytics</a></dd>
-                <dd class="item"><a href="#">Data Analyst</a></dd>
-                <dd class="item"><a href="#">Front End Web Developer</a></dd>
-                <dd class="item"><a href="#">Full Stack Web Developer</a></dd>
-                <dd class="item"><a href="#">Intro to Programming</a></dd>
-                <dd class="item"><a href="#">Intro to Machine Learning</a></dd>
-                <dd class="item"><a href="#">Machine Learning Engineer</a></dd>
-                <dd class="item"><a href="#">Predictive Analytics for Business</a></dd>
-                <dd class="item"><a href="#">Programming for Data Science with Python</a></dd>
-                <dd class="item"><a href="#">Programming for Data Science with R</a></dd>
-                <dd class="item"><a href="#">React</a></dd>
-              </dl>
-            </div>
-          </div>
-          <div class="footer-link">
-            <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Only at udacity</button>
-            <div class="link-has-child">
-              <dl class="footer-link">
-                <dt class="feature-desktop">Only at udacity</dt>
-                <dd class="item"><a href="#">Artificial Intelligence</a></dd>
-                <dd class="item"><a href="#">Deep Learning</a></dd>
-                <dd class="item"><a href="#">Digital Marketing</a></dd>
-                <dd class="item"><a href="#">Flying Car and Autonomous Flight Engineer</a></dd>
-                <dd class="item"><a href="#">Intro to Self-Driving Cars</a></dd>
-                <dd class="item"><a href="#">Machine Learning Engineer</a></dd>
-                <dd class="item"><a href="#">Robotics Software Engineer</a></dd>
-              </dl>
-            </div>
-          </div>
-          <div class="footer-link">
-            <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Udacity School</button>
-            <div class="link-has-child">
-              <dl class="footer-link">
-                <dt class="feature-desktop">Udacity School</dt>
-                <dd class="item"><a href="#">Self-Driving Car Engineer</a></dd>
-                <dd class="item"><a href="#">School of Artificial Intelligence</a></dd>
-                <dd class="item"><a href="#">School of Autonomous Systems</a></dd>
-                <dd class="item"><a href="#">School of Business</a></dd>
-                <dd class="item"><a href="#">School of Data Science</a></dd>
-                <dd class="item"><a href="#">School of Programming</a></dd>
-                <dd class="item"><a href="#">School of Cloud Computing</a></dd>
-              </dl>
-            </div>
-          </div>
-          <div class="footer-link">
-            <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Resources</button>
-            <div class="link-has-child">
-              <dl class="footer-link">
-                <dt class="feature-desktop">Resources</dt>
-                <dd class="item"><a href="#">Catalog</a></dd>
-                <dd class="item"><a href="#">Career Resource Center</a></dd>
-                <dd class="item"><a href="#">Career Services</a></dd>
-                <dd class="item"><a href="#">Student Success</a></dd>
-                <dd class="item"><a href="#">Udacity Talks</a></dd>
-                <dd class="item"><a href="#">Scholarships</a></dd>
-                <dd class="item"><a href="#">What is AI?</a></dd>
-              </dl>
-            </div>
-          </div>
-          <div class="footer-link">
-            <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Programs</button>
-            <div class="link-has-child">
-              <dl class="footer-link">
-                <dt class="feature-desktop">Programs</dt>
-                <dd class="item"><a href="#">Veterans</a></dd>
-                <dd class="item"><a href="#">Georgia Tech</a></dd>
-              </dl>
-            </div>
-          </div>
-          <div class="footer-link">
-            <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Company</button>
-            <div class="link-has-child">
-              <dl class="footer-link link-has-child grid-block block-5">
-                <dt class="feature-desktop">Company</dt>
-                <dd class="item"><a href="#">About</a></dd>
-                <dd class="item"><a href="#">Blog</a></dd>
-                <dd class="item"><a href="#">In the News</a></dd>
-                <dd class="item"><a href="#">Jobs</a></dd>
-                <dd class="item"><a href="#">Udacity Intersect</a></dd>
-                <dd class="item"><a href="#">Become an Instructor</a></dd>
-              </dl>
-            </div>
-          </div>
-          <div class="footer-link">
-            <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Enterprise</button>
-            <div class="link-has-child">
-              <dl class="footer-link">
-                <dt class="feature-desktop">Enterprise</dt>
-                <dd class="item"><a href="#">Udacity for Enterprise</a></dd>
-                <dd class="item"><a href="#">Enterprise Resource Center</a></dd>
-              </dl>
-            </div>
-          </div>
-          <div class="footer-link">
-            <button onclick="openThis(this)" type="button" class="mobile-feature footer-btn">Support</button>
-            <div class="link-has-child">
-              <dl class="footer-link">
-                <dt class="feature-desktop">Support</dt>
-                <dd class="item"><a href="#">Contact Us</a></dd>
-                <dd class="item"><a href="#">Help and FAQ</a></dd>
-                <dd class="item"><a href="#">Service Status</a></dd>
-                <dd class="item"><a href="#">Tech Requirements</a></dd>
-              </dl>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="footer-copyright-top">
-        <p class="copyright">© 2011–2020 Udacity, Inc.</p>
-      </div>
-      <div class="footer-copyright-middle">
-        <ul class="social-media">
-          <li class="social-item">
-            <a href="#"><img src="./img/facebook.svg" alt="facebook"></a>
-          </li>
-          <li class="social-item">
-            <a href="#"><img src="./img/twitter.svg" alt="twitter"></a>
-          </li>
-          <li class="social-item">
-            <a href="#"><img src="./img/medium.svg" alt="medium"></a>
-          </li>
-          <li class="social-item">
-            <a href="#"><img src="./img/linkedin.svg" alt="linkedin"></a>
-          </li>
-          <li class="social-item">
-            <a href="#"><img src="./img/instagram.svg" alt="instagram"></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-marker-bottom">
-      <div class="copyright-text-top">
-        <p>"Nanodegree" is a registered trademark of Udacity. © 2011–2020 Udacity, Inc.</p>
-      </div>
-      <div class="copyright-text-bottom">
-        <p>Udacity is not an accredited university and we don't confer traditional degrees. Udacity Nanodegree programs
-          represent collaborations with our industry partners who help us develop our content and who hire many of our
-          program graduates.</p>
-      </div>
-    </div>
   </footer>
   <script src="./js/main.js"></script>
 </body>

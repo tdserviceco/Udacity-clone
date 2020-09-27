@@ -1,14 +1,19 @@
-.menu.mobile .main-navigation {
+#button-trigger {
+  display: none;
+}
+
+.main-navigation {
   display: none;
   position: fixed;
   left: -100vw;
   opacity: 0;
 }
 
-.menu.mobile .main-navigation.active {
+.main-navigation.active {
   display: flex;
   flex-direction: column;
-  width: 80vw;
+  width: 100%;
+  max-width: 80vw;
   background: var(--black-text);
   animation-name: NavMove;
   animation-duration: var(--animation-speed);
@@ -19,19 +24,19 @@
   height: 100%;
 }
 
-.menu.mobile .nav-top {
+.nav-top {
   height: calc(var(--height) - 1.75rem);
   background: var(--mobile-menu-bg);
 }
 
-.menu.mobile .nav-top>a {
+.nav-top > a {
   justify-content: center;
   align-items: center;
   display: flex;
   height: 100%;
 }
 
-.menu.mobile .nav-bottom>.navigation {
+.navigation {
   justify-content: center;
   align-items: flex-start;
   display: flex;
@@ -39,17 +44,12 @@
   width: 100%;
 }
 
-.menu.mobile .nav-bottom>.navigation .navigation-items {
+.navigation-items {
   height: calc(var(--height) - 1.75rem);
   width: 80vw;
 }
 
-
-.menu.mobile .nav-bottom>.navigation .navigation-items .item svg {
-  fill: #fff;
-}
-
-.menu.mobile .nav-bottom>.navigation .navigation-items .item, .menu.mobile .nav-bottom>.navigation .navigation-items .item:visited {
+.nav-item {
   color: var(--white-bg);
   text-decoration: none;
   justify-content: flex-start;
@@ -57,31 +57,37 @@
   display: flex;
   height: 100%;
   width: 100%;
-  ;
   padding: 2vw 4vw;
 }
 
-#button-trigger:checked, #button-trigger:not(:checked) {
-  display: none;
+.nav-item svg {
+  fill: #fff;
 }
 
 .menu-wrapper {
   height: calc(var(--height) - 1.75rem);
 }
 
-.menu-wrapper #menu-bars {
+
+#menu-bars {
   max-width: 1.375rem;
   display: block;
   position: relative;
   width: 100%;
   height: 50%;
-  border-bottom: 4px solid var(--nav-bars);
+  border-bottom: 0.25rem solid var(--nav-bars);
   z-index: 3;
   cursor: pointer;
   border-radius: 0.0625rem;
 }
 
-.menu-wrapper #menu-bars:after, .menu-wrapper #menu-bars:before {
+#menu-bars:before {
+  border-top: 0.25rem solid var(--nav-bars);
+  top: 1.625rem
+}
+
+#menu-bars:after, 
+#menu-bars:before {
   cursor: pointer;
   content: '';
   width: 100%;
@@ -92,99 +98,42 @@
   border-radius: 0.0625rem;
 }
 
-.menu-wrapper #menu-bars:before {
-  border-top: 4px solid var(--nav-bars);
-  top: 1.625rem
-}
-
-.menu-wrapper #menu-bars:after {
-  border-bottom: 4px solid var(--nav-bars);
+#menu-bars:after {
+  border-bottom: 0.25rem solid var(--nav-bars);
   bottom: -0.625rem;
 }
 
-@media only screen and (min-width: 760px) {
-  .header-main, .menu-wrapper {
-    height: calc(var(--height) - 0.25rem);
-  }
-  .menu-wrapper #menu-bars:before {
-    top: 2.375rem;
-  }
+.header-main {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.logotype-block {
+  justify-self: start;
+  align-self: center;
+}
+
+.sign-in,
+.get-started {
+  font-family: var(--default-font);
+} 
+.sign-in {
+  color: var(--nav-bars);
+}
+
+.get-started {
+  color: var(--green);
+}
+
+.active .container {
+  max-width: 80vw;
+}
+.container {
+  max-width: 90vw;
 }
 
 @media only screen and (min-width: 768px) {
-  .menu.mobile .nav-top {
-    height: calc(var(--height) - 0.1rem);
+  .main-navigation.active {
+    max-width: 40vw;
   }
-}
-
-@media only screen and (min-width: 1920px) {
-  .header-main {
-    display: flex;
-  }
-  .menu.desktop .menu-wrapper {
-    display: none;
-  }
-
-  .menu.desktop .main-navigation {
-    display: flex;
-    left: 0;
-    opacity: 1;
-    position: relative;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100vw;
-  }
-
-  .logotype-block {
-    display: none;
-  }
-
-  .menu.desktop .nav-top {
-    display: flex;
-    justify-content: flex-start;
-    align-self: flex-start;
-    height: calc(var(--height) - 0vw);
-    background: transparent;
-    width: 100%;
-  }
-
-  .menu.mobile .nav-bottom > .navigation {
-    flex-direction: row;
-  }
-
-  .menu.desktop .nav-bottom>.navigation .navigation-items {
-    width: 11vw;
-  }
-
-  .menu.desktop .nav-bottom>.navigation .navigation-items svg {
-    fill: var(--grey-bg) !important;
-    transform: rotate(90deg);
-  }
-
-  .menu.desktop .nav-bottom>.navigation .navigation-items:nth-child(4) {
-    padding: 0 4vw;
-    border-left: 0.1vw solid var(--border-color);
-  }
-
-  .menu.desktop .nav-bottom>.navigation .navigation-items .item, .menu.desktop .nav-bottom>.navigation .navigation-items .item:visited {
-    padding: 0;
-    color: var(--border-color);
-    width: auto;
-  }
-
-  .sign-in {
-    color: var(--border-color) !important;
-  }
-
-  .get-started {
-    width: 5.5vw !important;
-    background: var(--button-bg);
-    color: var(--white-text) !important;
-    font-family: var(--default-font);
-    border-radius: 0.1875rem;
-    text-transform: uppercase;
-    padding: 0.1vw !important;
-    box-shadow: var(--box-shadow);
-  }
-
 }
